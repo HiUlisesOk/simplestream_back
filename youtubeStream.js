@@ -3,7 +3,7 @@ const { google } = require('googleapis');
 // Initialize YouTube API client
 const youtube = google.youtube({
 	version: 'v3',
-	auth: 'AIzaSyDBemo0TdjhkEzH-JUUMxZ1RMZJPlOLC_U' // Replace 'YOUR_API_KEY' with your actual API key
+	auth: process.env.API_KEY_STREAMPLAY
 });
 
 // Function to start a live broadcast
