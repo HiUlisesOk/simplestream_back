@@ -7,8 +7,11 @@ app.get('/', (req, res) => {
 	res.send('Hello, world!');
 });
 
-app.listen(port, () => {
+app.listen(port, async () => {
 	console.log(`Server is listening at https://simplestream-back.pages.dev:${port}`);
+
+	// Call the startBroadcast function
+	await startBroadcast();
 });
 
-
+console.log('Hello, world!');
