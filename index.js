@@ -1,5 +1,5 @@
 const express = require('express');
-const startBroadcast = require('./youtubeStream');
+const startBroadcast = require('./functions/youtubeStream');
 const app = express();
 const port = 3001;
 
