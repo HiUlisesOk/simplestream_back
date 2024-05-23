@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const oauth2Client = new google.auth.OAuth2(
 	process.env.CLIENT_ID,
 	process.env.CLIENT_SECRET,
-	'http://localhost:3000/oauth2callback'
+	'https://front-user-interface.vercel.app/oauth2callback'
 );
 
 app.post('/oauth2callback', async (req, res) => {
@@ -56,5 +56,5 @@ app.get('/start-broadcast', async (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`Server is listening at http://localhost:${port}`);
+	console.log(`Server is listening at https://front-user-interface.vercel.app/:${port}`);
 });
